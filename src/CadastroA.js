@@ -41,6 +41,7 @@ export default class CadastroA extends Component {
         fetch('http://lospraianos-env-1.qu3skpxsmw.sa-east-1.elasticbeanstalk.com/api/materials',requestInfo)
         .then(response => response.json())
         console.log(JSON.stringify({un:'un',material:this.state.produto,qtdMin:this.state.quantidade}));
+        setTimeout(()=>window.location.reload(),500); 
         }
        
         
