@@ -1,0 +1,19 @@
+.pure-table{
+    text-align:center;
+    width: 100%
+}
+
+button{
+    margin-top: 2ch;
+    margin-bottom: 2ch;
+    margin-right: 1ch;
+}
+
+.center-alignment{
+    text-align: center;
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
