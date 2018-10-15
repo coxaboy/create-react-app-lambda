@@ -62,9 +62,9 @@ export default class SaidaA extends Component {
         fetch('http://lospraianos-env-1.qu3skpxsmw.sa-east-1.elasticbeanstalk.com/api/materials/' + this.state.id,requestInfo)
         .then(response => response.json())
         this.setState({quantidade: 0})
-        
-        window.location.reload(); 
-    }
+        setTimeout(()=>window.location.reload(),500); 
+        }
+    
 
     render(){
         return(

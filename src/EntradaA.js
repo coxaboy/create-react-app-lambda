@@ -61,9 +61,10 @@ export default class EntradaA extends Component {
         evento.preventDefault()
         fetch('http://lospraianos-env-1.qu3skpxsmw.sa-east-1.elasticbeanstalk.com/api/materials/' + this.state.id,requestInfo)
         .then(response => response.json())
-        window.location.reload(); 
         this.setState({quantidade: 0})
-    }
+        setTimeout(()=>window.location.reload(),500); 
+        }
+    
 
     render(){
         return(
